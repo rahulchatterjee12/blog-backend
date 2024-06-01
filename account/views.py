@@ -7,7 +7,7 @@ from .serializer import RegisterSerializer
 
 class RegisterView(APIView):
 
-    def post(sef, request):
+    def post(self, request):
         try:
             data = request.data
             serializer = RegisterSerializer(data=data)
